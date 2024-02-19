@@ -31,6 +31,11 @@ h1 {
     padding: 0;
 }
 
+.options button img {
+    width: 150px;
+    height: 150px; 
+}
+
 .options button:hover {
     filter: brightness(1.4);
 }
