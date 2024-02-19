@@ -31,3 +31,32 @@ h1 {
     min-width: 150px;
     transition: background-color 0.8s ease;
 }
+
+.options button:hover {
+    background-color: hsl(40, 80%, 70%);
+}
+
+/* Display Styles Section */
+#userDisplay, #computerDisplay {
+    font-size: 2rem;
+}
+
+/* Result Display Styles Section */
+#resultDisplay {
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+/* Score Display Styles Section */
+.scoreDisplay {
+    font-size: 2rem;
+}
+
+/* Score Color Styles Section */
+#UserScoreDisplay, .yellowText {
+    color: hsl(50, 80%, 60%);
+}
+
+computerScoreDisplay, .blackText {
+    color: hsl(0, 0%, 0%);
+}
