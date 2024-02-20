@@ -32,3 +32,25 @@ function determineWinner(playerOption, computerOption) {
         }
     }
 }
+
+// Function to update the UI
+function updateUi(playerOption, computerOption, result) {
+    userDisplay.innerText = `User: ${playerOption}`;
+    computerDisplay.innerText = `Computer: ${computerOption}`;
+    resultDisplay.innerText = result;
+
+    resultDisplay.classList.remove(".yellowText", ".blackText");
+
+    switch (result) {
+        case "You won!!":
+            resultDisplay.classList.add(".yellowText");
+            userScore++;
+            userScoreDisplay.innerText = userScore;
+            break;
+        case "You lose!!":
+            resultDisplay.classList.add(".blackText");
+            computerScoreScore++;
+            computerScoreDisplayScoreDisplay.innerText = computerScore;
+            break;
+    }
+}

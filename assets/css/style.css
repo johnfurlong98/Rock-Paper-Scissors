@@ -61,6 +61,6 @@ h1 {
     color: hsl(50, 80%, 60%);
 }
 
-computerScoreDisplay, .blackText {
+#computerScoreDisplay, .blackText {
     color: hsl(0, 0%, 0%);
 }
