@@ -1,3 +1,3 @@
 // Options for the game 
-let choices = ["rock","paper","scissors"];
+let options = ["rock","paper","scissors"];
 
