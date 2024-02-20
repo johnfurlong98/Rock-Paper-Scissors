@@ -16,3 +16,19 @@ let userScore = 0;
 function getComptuterOption(){
     return options[Math.floor(Math.random() * 3)];
 }
+
+// Function to determine the winner
+function determineWinner(playerOption, computerOption) {
+    if (playerOption === computerOption) {
+        return "It's a draw!!";
+    } else {
+        switch (playerOption) {
+            case "rock":
+                return (computerOption === "scissors") ? "You won!!" : "You lose!";
+            case "paper":
+                return (computerOption === "rock") ? "You won!!" : "You lose!";
+            case "scissors":
+                return (computerOption === "paper") ? "You won!!" : "You lose!";            
+        }
+    }
+}
