@@ -7,3 +7,7 @@ let userDisplay = document.getElementById("userDisplay");
 let computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let userScoreDisplay = document.getElementById("userScoreDisplay");
 let resultDisplay = document.getElementById("resultDisplay");
+
+//Starting score for computer and user
+let computerScore = 0;
+let userScore = 0;
