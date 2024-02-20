@@ -8,13 +8,11 @@ let computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let userScoreDisplay = document.getElementById("userScoreDisplay");
 let resultDisplay = document.getElementById("resultDisplay");
 
-//Starting score for computer and user
+// Starting score for computer and user
 let computerScore = 0;
 let userScore = 0;
 
-//Function to run game when the user makes a choice
-function runGame(userOption){
-
-     let computerOption = options[Math.floor(Math.random() * 3)];
-
+// Function to generate computer's option
+function getComptuterOption(){
+    return options[Math.floor(Math.random() * 3)];
 }
