@@ -48,6 +48,21 @@ function checkGameOver() {
     return moveCount >= MAX_MOVES;
 }
 
+// Function to show final results
+function showFinalResults() {
+    let finalMessage = "";
+
+    if (userScore > computerScore) {
+        finalMessage = "Congratulations! You are the overall winner!";
+    } else if (userScore < computerScore) {
+        finalMessage = "Better luck next time! Computer is the overall winner.";
+    } else {
+        finalMessage = "It's a tie! The game ends in a draw.";
+    } 
+    
+    resultDisplay.innerText = finalMessage;
+}
+
 // Function to update the UI
 function updateUi(playerOption, computerOption, result) {
     userDisplay.innerHTML = '';
@@ -91,9 +106,4 @@ function runGame(playerOption) {
         showFinalResults();
     }
   }  
-}
-
-// Function to show final results
-function showFinalResults() {
-    
 }
