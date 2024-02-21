@@ -1,5 +1,5 @@
 // Options for the game 
-let options = ["rock","paper","scissors"];
+let options = ["rock", "paper", "scissors"];
 
 // References to HTML elements
 let computerDisplay = document.getElementById("computerDisplay");
@@ -16,7 +16,7 @@ const MAX_MOVES = 5;
 let moveCount = 0;
 
 // Function to generate computer's option
-function getComputerOption(){
+function getComputerOption() {
     return options[Math.floor(Math.random() * options.length)];
 }
 
@@ -38,15 +38,26 @@ function determineWinner(playerOption, computerOption) {
             case "paper":
                 return (computerOption === "rock") ? "You won!!" : "You lose!";
             case "scissors":
-                return (computerOption === "paper") ? "You won!!" : "You lose!";            
+                return (computerOption === "paper") ? "You won!!" : "You lose!";
         }
     }
 }
 
+// Function to check if the game is over
+function checkGameOver() {
+    return moveCount >= MAX_MOVES;
+}
+
 // Function to update the UI
 function updateUi(playerOption, computerOption, result) {
-    userDisplay.innerText = `User: ${playerOption}`;
-    computerDisplay.innerText = `Computer: ${computerOption}`;
+    userDisplay.innerHTML = '';
+    userDisplay.appendChild(createElement('span', 'User: '));
+    userDisplay.appendChild(createElement('span', playerOption));
+
+    computerDisplay.innerHTML = '';
+    computerDisplay.appendChild(createElement('span', 'Computer: '));
+    computerDisplay.appendChild(createElement('span', computerOption));
+
     resultDisplay.innerText = result;
 
     resultDisplay.classList.remove("yellowText", "blackText");
@@ -62,6 +73,7 @@ function updateUi(playerOption, computerOption, result) {
             computerScore++;
             computerScoreDisplay.innerText = computerScore;
             break;
+
     }
 }
 
@@ -70,11 +82,18 @@ function updateUi(playerOption, computerOption, result) {
  * @param {string} playerOption The option selected by user.
  */
 function runGame(playerOption) {
+  if (!checkGameOver()) {
     moveCount++;
-    let computerOption =getComputerOption();
+    let computerOption = getComputerOption();
     let result = determineWinner(playerOption, computerOption);
     updateUi(playerOption, computerOption, result);
     if (checkGameOver()) {
         showFinalResults();
     }
+  }  
+}
+
+// Function to show final results
+function showFinalResults() {
+    
 }
