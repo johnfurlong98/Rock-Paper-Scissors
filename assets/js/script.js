@@ -8,7 +8,7 @@ let computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let userScoreDisplay = document.getElementById("userScoreDisplay");
 let resultDisplay = document.getElementById("resultDisplay");
 
-// Starting score for computer and user
+// Starting score and max moves for computer and user
 let computerScore = 0;
 let userScore = 0;
 
@@ -17,7 +17,14 @@ let moveCount = 0;
 
 // Function to generate computer's option
 function getComputerOption(){
-    return options[Math.floor(Math.random() * 3)];
+    return options[Math.floor(Math.random() * options.length)];
+}
+
+// Function to create HTML element
+function createElement(tag, text) {
+    const element = document.createElement(tag);
+    element.innerText = text;
+    return element;
 }
 
 // Function to determine the winner
