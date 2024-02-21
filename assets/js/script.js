@@ -12,6 +12,9 @@ let resultDisplay = document.getElementById("resultDisplay");
 let computerScore = 0;
 let userScore = 0;
 
+const MAX_MOVES = 5;
+let moveCount = 0;
+
 // Function to generate computer's option
 function getComputerOption(){
     return options[Math.floor(Math.random() * 3)];
@@ -55,9 +58,16 @@ function updateUi(playerOption, computerOption, result) {
     }
 }
 
-// Function to run the game when a player makes a choice
+/**
+ * Runs the game when a player makes a choice.
+ * @param {string} playerOption The option selected by user.
+ */
 function runGame(playerOption) {
+    moveCount++;
     let computerOption =getComputerOption();
     let result = determineWinner(playerOption, computerOption);
     updateUi(playerOption, computerOption, result);
+    if (checkGameOver()) {
+        showFinalResults();
+    }
 }
