@@ -13,7 +13,7 @@ let computerScore = 0;
 let userScore = 0;
 
 // Function to generate computer's option
-function getComptuterOption(){
+function getComputerOption(){
     return options[Math.floor(Math.random() * 3)];
 }
 
@@ -39,18 +39,25 @@ function updateUi(playerOption, computerOption, result) {
     computerDisplay.innerText = `Computer: ${computerOption}`;
     resultDisplay.innerText = result;
 
-    resultDisplay.classList.remove(".yellowText", ".blackText");
+    resultDisplay.classList.remove("yellowText", "blackText");
 
     switch (result) {
         case "You won!!":
-            resultDisplay.classList.add(".yellowText");
+            resultDisplay.classList.add("yellowText");
             userScore++;
             userScoreDisplay.innerText = userScore;
             break;
         case "You lose!!":
-            resultDisplay.classList.add(".blackText");
-            computerScoreScore++;
-            computerScoreDisplayScoreDisplay.innerText = computerScore;
+            resultDisplay.classList.add("blackText");
+            computerScore++;
+            computerScoreDisplay.innerText = computerScore;
             break;
     }
+}
+
+// Function to run the game when a player makes a choice
+function runGame(playerOption) {
+    let computerOption =getComputerOption();
+    let result = determineWinner(playerOption, computerOption);
+    updateUi(playerOption, computerOption, result);
 }
