@@ -34,11 +34,11 @@ function determineWinner(playerOption, computerOption) {
     } else {
         switch (playerOption) {
             case "rock":
-                return (computerOption === "scissors") ? "You won!!" : "You lose!";
+                return (computerOption === "scissors") ? "You won!!" : "You lose!!";
             case "paper":
-                return (computerOption === "rock") ? "You won!!" : "You lose!";
+                return (computerOption === "rock") ? "You won!!" : "You lose!!";
             case "scissors":
-                return (computerOption === "paper") ? "You won!!" : "You lose!";
+                return (computerOption === "paper") ? "You won!!" : "You lose!!";
         }
     }
 }
@@ -65,6 +65,7 @@ function showFinalResults() {
 
 // Function to update the UI
 function updateUi(playerOption, computerOption, result) {
+    console.log("Result:", result);
     userDisplay.innerHTML = '';
     userDisplay.appendChild(createElement('span', 'User: '));
     userDisplay.appendChild(createElement('span', playerOption));
