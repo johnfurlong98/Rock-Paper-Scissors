@@ -64,3 +64,11 @@ h1 {
 #computerScoreDisplay, .blackText {
     color: hsl(0, 0%, 0%);
 }
+
+/* Styles for tthe footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
