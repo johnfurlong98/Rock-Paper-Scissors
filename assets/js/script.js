@@ -1,5 +1,7 @@
 // Options for the game 
-let options = ["rock", "paper", "scissors"];
+const ROCK = "rock";
+const PAPER = "paper";
+const SCISSORS = "scissors";
 
 // References to HTML elements
 let computerDisplay = document.getElementById("computerDisplay");
@@ -17,6 +19,7 @@ let moveCount = 0;
 
 // Function to generate computer's option
 function getComputerOption() {
+    const options = [ROCK, PAPER, SCISSORS];
     return options[Math.floor(Math.random() * options.length)];
 }
 
@@ -33,12 +36,12 @@ function determineWinner(playerOption, computerOption) {
         return "It's a draw!!";
     } else {
         switch (playerOption) {
-            case "rock":
-                return (computerOption === "scissors") ? "You won!!" : "You lose!!";
-            case "paper":
-                return (computerOption === "rock") ? "You won!!" : "You lose!!";
-            case "scissors":
-                return (computerOption === "paper") ? "You won!!" : "You lose!!";
+            case ROCK:
+                return (computerOption === SCISSORS) ? "You won!!" : "You lose!!";
+            case PAPER:
+                return (computerOption === ROCK) ? "You won!!" : "You lose!!";
+            case SCISSORS:
+                return (computerOption === PAPER) ? "You won!!" : "You lose!!";
         }
     }
 }
