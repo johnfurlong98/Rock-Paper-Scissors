@@ -26,7 +26,6 @@ h1 {
 /* Button Styles */
 .options button {
     background-color: hsl(120, 100%, 50%);
-    border-radius: none;
     cursor: pointer;
     margin: 0 15px;
     padding: 0;
