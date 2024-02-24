@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
 
 /* Body Styles */
-body{
+body {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ body{
 
 /* Header Styles */
 h1 {
-    color: hsl(0, 0%, 0% );
+    color: hsl(0, 0%, 0%);
     font-size: 4rem;
 }
 
@@ -33,7 +33,7 @@ h1 {
 
 .options button img {
     width: 150px;
-    height: 150px; 
+    height: 150px;
 }
 
 .options button:hover {
@@ -41,7 +41,8 @@ h1 {
 }
 
 /* Display Styles Section */
-#userDisplay, #computerDisplay {
+#userDisplay,
+#computerDisplay {
     font-size: 2rem;
 }
 
@@ -58,11 +59,13 @@ h1 {
 }
 
 /* Score Color Styles Section */
-#UserScoreDisplay, .yellowText {
+#UserScoreDisplay,
+.yellowText {
     color: hsl(50, 80%, 60%);
 }
 
-#computerScoreDisplay, .blackText {
+#computerScoreDisplay,
+.blackText {
     color: hsl(0, 0%, 0%);
 }
 
@@ -83,24 +86,25 @@ footer h2 {
     h1 {
         font-size: 1.5rem;
     }
-    
+
     .options button img {
         width: 65px;
         height: 110px;
     }
-    
+
     #resultDisplay {
         font-size: 1.5rem;
     }
-    
+
     .scoreDisplay {
         font-size: 1.4rem;
     }
-    
-    #userDisplay, #computerDisplay {
+
+    #userDisplay,
+    #computerDisplay {
         font-size: 1.4rem;
     }
-    
+
     footer h2 {
         font-size: 1.5rem;
     }
@@ -108,7 +112,7 @@ footer h2 {
     footer p {
         font-size: 0.9rem;
     }
-    }
+}
 
 
 /* Media Query: Phones and up (375px and up) */
@@ -116,24 +120,25 @@ footer h2 {
     h1 {
         font-size: 2.0rem;
     }
-    
+
     .options button img {
         width: 85px;
         height: 120px;
     }
-    
+
     #resultDisplay {
         font-size: 2.5rem;
     }
-    
+
     .scoreDisplay {
         font-size: 1.8rem;
     }
-    
-    #userDisplay, #computerDisplay {
+
+    #userDisplay,
+    #computerDisplay {
         font-size: 1.8rem;
     }
-    
+
     footer h2 {
         font-size: 2rem;
     }
@@ -141,58 +146,69 @@ footer h2 {
     footer p {
         font-size: 1rem;
     }
-    }
-    
-    /* Media Query: Tablets and up (768px and up) */
-    @media screen and (min-width: 768px) {
-        h1 {
-            font-size: 3em;
-        }
-        
-        .options {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-        }
-    
-        .options button img {
-            width: 150px;
-            height: 150px;
-        }
+}
 
-        #userDisplay {
-            font-size: 2.5rem;
-        }
-
-        #computerDisplay {
-            font-size: 2.5rem;
-        }
-    
-        #resultDisplay {
-            font-size: 3rem;
-        }
-    
-        .scoreDisplay {
-            font-size: 2.5rem;
-        }
-    
-        .scoreDisplay {
-            font-size: 2.5rem;
-        }
-    
-        footer {
-            padding: 30px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-    
-        footer h2 {
-            font-size: 2.5rem;
-        }
-    
-        footer p {
-            font-size: 1.5rem;
-        }
+/* Media Query: Tablets and up (768px and up) */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3em;
     }
+
+    .options {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .options button img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #userDisplay {
+        font-size: 2.5rem;
+    }
+
+    #computerDisplay {
+        font-size: 2.5rem;
+    }
+
+    #resultDisplay {
+        font-size: 3rem;
+    }
+
+    .scoreDisplay {
+        font-size: 2.5rem;
+    }
+
+    .scoreDisplay {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        padding: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer h2 {
+        font-size: 2.5rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media query for laptops and larger devices */
+@media only screen and (min-width: 1024px) {
+    .options {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
