@@ -75,6 +75,10 @@ footer {
     text-align: center;
 }
 
+footer h2 {
+    color: hsl(0, 100%, 50%);
+}
+
 /* Media Query: Small phones and up (375px and up) */
 @media screen and (min-width: 375px) {
     h1 {
