@@ -1,36 +1,48 @@
-// Options for the game 
+/**
+ * Options for the game.
+ */
 const ROCK = "rock";
 const PAPER = "paper";
 const SCISSORS = "scissors";
 
-// References to HTML elements
+/**
+ * References to HTML elements
+ */
 let computerDisplay = document.getElementById("computerDisplay");
 let userDisplay = document.getElementById("userDisplay");
 let computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let userScoreDisplay = document.getElementById("userScoreDisplay");
 let resultDisplay = document.getElementById("resultDisplay");
 
-// Starting score and max moves for computer and user
+/**
+ * Starting score and max moves for computer and user.
+ */
 let computerScore = 0;
 let userScore = 0;
 
 const MAX_MOVES = 5;
 let moveCount = 0;
 
-// Function to generate computer's option
+/**
+ * To generate computer option.
+ */
 function getComputerOption() {
     const options = [ROCK, PAPER, SCISSORS];
     return options[Math.floor(Math.random() * options.length)];
 }
 
-// Function to create HTML element
+/**
+ * To create html element.
+ */
 function createElement(tag, text) {
     const element = document.createElement(tag);
     element.innerText = text;
     return element;
 }
 
-// Function to determine the winner
+/**
+ * To determine the winner.
+ */
 function determineWinner(playerOption, computerOption) {
     if (playerOption === computerOption) {
         return "It's a draw!!";
@@ -46,12 +58,16 @@ function determineWinner(playerOption, computerOption) {
     }
 }
 
-// Function to check if the game is over
+/**
+ * To check if game is over.
+ */
 function checkGameOver() {
     return moveCount >= MAX_MOVES;
 }
 
-// Function to show final results
+/**
+ * To show the final results.
+ */
 function showFinalResults() {
     let finalMessage = "";
 
@@ -66,7 +82,9 @@ function showFinalResults() {
     resultDisplay.innerText = finalMessage;
 }
 
-// Function to update the UI
+/**
+ * To update the UI
+ */
 function updateUi(playerOption, computerOption, result) {
     console.log("Result:", result);
     userDisplay.innerHTML = '';
