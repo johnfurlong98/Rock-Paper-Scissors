@@ -78,7 +78,40 @@ footer h2 {
     color: hsl(0, 100%, 50%);
 }
 
-/* Media Query: Small phones and up (375px and up) */
+/* Media Query: Small Phones and up (320px and up) */
+@media screen and (min-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .options button img {
+        width: 65px;
+        height: 110px;
+    }
+    
+    #resultDisplay {
+        font-size: 1.5rem;
+    }
+    
+    .scoreDisplay {
+        font-size: 1.4rem;
+    }
+    
+    #userDisplay, #computerDisplay {
+        font-size: 1.4rem;
+    }
+    
+    footer h2 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+    }
+
+
+/* Media Query: Phones and up (375px and up) */
 @media screen and (min-width: 375px) {
     h1 {
         font-size: 2.0rem;
