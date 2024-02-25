@@ -4,6 +4,23 @@ Welcome to Rock Paper Scissors, classic game of strategy and luck! Challenge you
 
 ![responsive mockup](readme-images/responsivedesignrps.png)
 
+## Project Overview
+
+- The Rock Paper Scissors Game is an interactive web application designed to simulate the classic hand game where players choose between rock, paper, or scissors. The game is built with HTML, CSS, and JavaScript, providing a simple yet engaging user interface for a quick and fun play against a computer opponent.
+
+## Key Project Goals
+
+- Educational Purpose: Serve as a learning tool for individuals new to programming and web development by demonstrating basic principles of JavaScript and interactive web design.
+- User Engagement: Create an intuitive and engaging user experience that encourages repeated play and interaction.
+- Responsiveness: Design the game to be fully responsive, ensuring a seamless experience across various devices and screen sizes.
+- Extendibility: Structure the code in a way that allows for easy extension, such as adding new game modes or features in the future.
+
+## Target Audience
+
+- Beginner Web Developers: Individuals looking to understand the basics of JavaScript, HTML, and CSS through practical application.
+- Casual Gamers: Users seeking a quick and entertaining break, offering an easy-to-understand game that can be played in short sessions.
+- Educators: Teachers and educators who require a simple interactive tool to introduce programming concepts or logical thinking to their students.
+
 ## User Experience - UX
 
 ### User Stories
@@ -18,6 +35,10 @@ Welcome to Rock Paper Scissors, classic game of strategy and luck! Challenge you
 
 - Immediately grasp the purpose of the website.
 - Have a smooth experience while interacting with the website, regardless of the device I'm using.
+
+## Conclusion
+
+- The Rock Paper Scissors Game project is more than just a game; it's a gateway to learning web development and programming fundamentals. By engaging with this project, users of all ages can enjoy the timeless game of Rock Paper Scissors while gaining valuable insights into the workings of web applications. Whether you're a student, educator, or just someone looking to kill time, this game is designed with you in mind.
 
 ## Features
 - **Header**
