@@ -58,17 +58,6 @@ h1 {
     font-size: 2rem;
 }
 
-/* Score Color Styles Section */
-#UserScoreDisplay,
-.yellowText {
-    color: hsl(50, 80%, 60%);
-}
-
-#computerScoreDisplay,
-.blackText {
-    color: hsl(0, 0%, 0%);
-}
-
 /* Styles for tthe footer */
 footer {
     background-color: #f0f0f0;
@@ -132,7 +121,6 @@ footer h2 {
     }
 }
 
-
 /* Media Query: Phones and up (375px and up) */
 @media screen and (min-width: 375px) {
     h1 {
@@ -195,10 +183,6 @@ footer h2 {
 
     #resultDisplay {
         font-size: 3rem;
-    }
-
-    .scoreDisplay {
-        font-size: 2.5rem;
     }
 
     .scoreDisplay {
