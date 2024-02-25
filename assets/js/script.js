@@ -141,5 +141,4 @@ function resetGame() {
 
     userDisplay.innerText = "";
     computerDisplay.innerText = "";
-
 }
