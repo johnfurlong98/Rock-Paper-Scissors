@@ -32,7 +32,7 @@ function getComputerOption() {
 }
 
 /**
- * To create html element.
+ * To create html element for user and computers choice.
  */
 function createElement(tag, text) {
     const element = document.createElement(tag);
@@ -83,7 +83,7 @@ function showFinalResults() {
 }
 
 /**
- * To update the UI
+ * To update the UI to display the current state of the game.
  */
 function updateUi(playerOption, computerOption, result) {
     console.log("Result:", result);
