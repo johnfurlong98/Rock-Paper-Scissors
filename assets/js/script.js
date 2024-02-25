@@ -77,8 +77,8 @@ function showFinalResults() {
         finalMessage = "Better luck next time! Computer is the overall winner.";
     } else {
         finalMessage = "It's a tie! The game ends in a draw.";
-    } 
-    
+    }
+
     resultDisplay.innerText = finalMessage;
 }
 
@@ -119,13 +119,32 @@ function updateUi(playerOption, computerOption, result) {
  * @param {string} playerOption The option selected by user.
  */
 function runGame(playerOption) {
-  if (!checkGameOver()) {
-    moveCount++;
-    let computerOption = getComputerOption();
-    let result = determineWinner(playerOption, computerOption);
-    updateUi(playerOption, computerOption, result);
-    if (checkGameOver()) {
-        showFinalResults();
+    if (!checkGameOver()) {
+        moveCount++;
+        let computerOption = getComputerOption();
+        let result = determineWinner(playerOption, computerOption);
+        updateUi(playerOption, computerOption, result);
+        if (checkGameOver()) {
+            showFinalResults();
+        }
     }
-  }  
 }
+
+/**
+  * To reset the game.
+  */
+function resetGame() {
+    userScore = 0;
+    computerScore = 0;
+    moveCount = 0;
+
+    userScoreDisplay.innerText = userScore;
+    computerScoreDisplay.innerText = computerScore;
+
+    resultDisplay.innerText = "";
+
+    userDisplay.innerText = "";
+    computerDisplay.innerText = "";
+
+    resultDisplay.classList.remove("yellowText", "blackText");
+ }
