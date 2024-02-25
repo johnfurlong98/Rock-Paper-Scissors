@@ -97,16 +97,12 @@ function updateUi(playerOption, computerOption, result) {
 
     resultDisplay.innerText = result;
 
-    resultDisplay.classList.remove("yellowText", "blackText");
-
     switch (result) {
         case "You won!!":
-            resultDisplay.classList.add("yellowText");
             userScore++;
             userScoreDisplay.innerText = userScore;
             break;
         case "You lose!!":
-            resultDisplay.classList.add("blackText");
             computerScore++;
             computerScoreDisplay.innerText = computerScore;
             break;
@@ -146,5 +142,4 @@ function resetGame() {
     userDisplay.innerText = "";
     computerDisplay.innerText = "";
 
-    resultDisplay.classList.remove("yellowText", "blackText");
- }
+}
