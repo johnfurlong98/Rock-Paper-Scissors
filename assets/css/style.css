@@ -97,8 +97,8 @@ footer h2 {
 
     /* CSS for the reset button */
     #resetButton {
-        background-color: #ff0000;
-        color: #ffffff;
+        background-color: hsl(200, 100%, 50%);
+        color:hsl(0, 0%, 0%);
         border: none;
         padding: 10px 20px;
         font-size: 16px;
@@ -109,7 +109,7 @@ footer h2 {
 
     /* Hover effect */
     #resetButton:hover {
-        background-color: #ff3333;
+        background-color: hsl(189, 100%, 65%);
     }
 
     footer h2 {
